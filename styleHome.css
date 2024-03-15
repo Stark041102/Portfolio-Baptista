@@ -1,59 +1,133 @@
 /*----------------GENERAL --------------------*/
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
-
-
-.flex{
+.flex {
     display: flex;
     flex-wrap: wrap;
 }
-body{
-    background-color:#272829 ;
-    color:  #BBBBBB;
+
+body {
+    background-color: #272829;
+    color: #BBBBBB;
+}
+header {
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    display: flex;
+}
+footer{
+    width: 100%;
+    height: 70px;
+}
+main{
+    width: 100%;
+    height:calc(100vh - 70px - 70px) 
+}
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.6rem;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.6rem;
+}  
+
+a {
+    text-decoration: none;
+    font-size: 2.6rem;
+    color:white;
+}
+
+li {
+    list-style: none;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /*----------------HEADER --------------------*/
 
-header{
-    width: 100%;
-    height: 7vh; 
-}
-.diaposNav{
-    align-items: center;
-    justify-content: center;
+
+.diaposNav {
     width: 90%;
-    font-size: 2rem;
-    gap: 3px;
+    font-size: 2.5rem;
 }
-.nav{
- display: flex;    
+
+.smallLogoHeader img {
+    margin: 10px;
+    width: 80px;
+    height: auto;
+
 }
 
 /*----------------IndexHome --------------------*/
 /*------Body IndexHome ----*/
 
-.bigLogo{
-    width: 100%;
-    height: 50vh;
-    text-align: center;
-}
 
+main>span{
+    background-color: blue;
+    font-family: 'inter regular';
+    font-size: 15rem;
+
+}
 /*----------------PAGE 2 --------------------*/
 /*------Body Page2 ----*/
 
-body{
-    width: 100%;
+.about {
+padding: 130px ;
+}
+.buttonProject {
+    border: 4mm ridge rgba(195, 196, 181, 0.6);
+    color: black;
+}
+.ctaProject {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
-h2{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2.6rem;
-    display: flex;
+
+/*------Footer Page2 ----*/
+.socialMedia {
+gap: 10px;
+justify-content: flex-end;
+margin-right: 10px;
+
 }
-.about{
-  
-    padding: 100px;
+.picto{
+    width : 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url("./ASSETS/sprite-pictos.png");
+    background-repeat: no-repeat;
+    margin-right: 8px;
 }
-.mail{
-    font-size: 2.5rem;
+
+.pitco-mail{
+    background-position: 0 0;
+}
+.picto-instagram{
+    background-position: -24px 0;
+}
+
+.picto-linkedin{
+    background-position: -48px 0;
+}
+.picto-twitter{
+    background-position: -72px 0;
+}
+.picto-github{
+    background-position: -96px 0;
+}
+
+/* images responsive*/ /****a rajouter ****/
+.responsive{
+    width: 100%;
+    height: auto;
 }
